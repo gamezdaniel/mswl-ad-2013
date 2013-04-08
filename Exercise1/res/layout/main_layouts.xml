@@ -1,40 +1,138 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Layouts" >
-
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+    
 	<LinearLayout
 	    android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:orientation="vertical">
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
 
-		<TextView
-		    android:layout_width="fill_parent"
-		    android:layout_height="50dip"
-		    android:text="@string/title" 
-		    android:gravity="center_horizontal|center_vertical"
-		    android:background="#0000ff"
-		    android:textColor="#000000" />
+	    <TextView
+	        android:id="@+id/blue_bg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:text="@string/title"
+	        android:gravity="center_horizontal"
+	        android:background="#0000ff"
+	        android:padding="12dip" />
 
-		<RelativeLayout 
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content" >
-		    		    
-		</RelativeLayout>
-		
-		<TextView
-			android:layout_width="fill_parent"	
-			android:layout_height="20dip"			
-			android:background="#425121"	
-			android:text="@string/title"
-			android:textColor="#ff0000"
-			android:textStyle="bold" />
+	    <TextView
+	        android:id="@+id/brown_bg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/footer"
+	        android:textColor="#ff0000"
+	        android:background="#425121" />
+	</LinearLayout>
+	
+	<RelativeLayout
+    	android:id="@+id/user_id"
+    	android:layout_width="fill_parent"
+    	android:layout_height="90dip"
+    	android:layout_marginTop="40dip"
+    	android:background="#00ff00"
+    	android:padding="6dip" >
+    
+    	<ImageView
+        	android:id="@+id/icon"
+        	android:layout_width="wrap_content"
+        	android:layout_height="fill_parent"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginRight="6dip"
+        	android:contentDescription="@string/avatar"
+        	android:src="@drawable/icon" />
 
+    	<TextView
+        	android:id="@+id/username"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"        
+        	android:layout_toRightOf="@id/icon"
+        	android:layout_alignParentRight="true"
+        	android:layout_alignParentTop="true"
+        	android:layout_alignWithParentIfMissing="true"
+        	android:text="@string/username"
+        	android:gravity="center_horizontal" />
+    
+    	<TextView  
+        	android:layout_below="@id/username"
+        	android:layout_width="fill_parent"
+        	android:layout_height="40dip"
+        	android:layout_marginTop="6dip"
+        	android:lines="3"         
+        	android:layout_toRightOf="@id/icon"
+        	android:layout_alignParentBottom="true"
+        	android:layout_alignParentRight="true"
+        	android:text="@string/description" />
+
+	</RelativeLayout>
+
+
+	<LinearLayout
+    	android:id="@+id/buttons"
+    	android:layout_below="@id/user_id"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:background="#00fff7"
+    	android:padding="6dip" >
+
+		<Button
+    		android:id="@+id/perfil"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"    	            
+    		android:text="@string/perfil"
+    		android:layout_gravity="center_vertical|center_horizontal"
+    		android:layout_marginTop="10dip"    	             
+    		android:width="90dip"/>
+
+		<Button
+    		android:id="@+id/info"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"    	            
+    		android:text="@string/info"
+    		android:layout_gravity="center_vertical|center_horizontal"
+    		android:layout_marginTop="10dip" 
+    		android:width="90dip"/>
+
+		<Button
+    		android:id="@+id/update"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="center_vertical|center_horizontal"
+    		android:text="@string/update"  			
+    		android:layout_marginTop="10dip"		
+    		android:width="90dip"/>
+	    
 	</LinearLayout>
 
+
+	<LinearLayout
+    	android:layout_below="@id/user_id"
+		android:layout_toRightOf="@+id/buttons"
+    	android:layout_width="fill_parent"
+    	android:layout_height="230dip"
+    	android:orientation="vertical" 
+    	android:background="#425500">
+
+    	<ImageView
+        	android:id="@+id/map"
+        	android:layout_width="150dip"
+        	android:layout_height="150dip"
+        	android:contentDescription="@string/locate"
+        	android:layout_gravity="center_vertical|center_horizontal"
+        	android:layout_marginTop="10dip"		
+        	android:src="@drawable/map" />
+        
+    	<Button
+			android:id="@+id/locate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:text="@string/locate"  			
+			android:layout_marginTop="10dip" />
+    		     	     
+	</LinearLayout>
+	
 </RelativeLayout>

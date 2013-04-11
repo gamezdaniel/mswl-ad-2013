@@ -1,32 +1,22 @@
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:layout_width="match_parent"
-	android:layout_height="match_parent" >
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" >
     
-	<LinearLayout
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:orientation="vertical" >
+<RelativeLayout 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#0000ff" >
 
 	    <TextView
 	        android:id="@+id/blue_bg"
 	        android:layout_width="fill_parent"
-	        android:layout_height="0dip"
-	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
 	        android:text="@string/title"
 	        android:gravity="center_horizontal"
-	        android:background="#0000ff"
-	        android:padding="12dip" />
+	        android:padding="12dip" 
+	        android:layout_alignParentTop="true" />
 
-	    <TextView
-	        android:id="@+id/brown_bg"
-	        android:layout_width="fill_parent"
-	        android:layout_height="wrap_content"
-	        android:text="@string/footer"
-	        android:textColor="#ff0000"
-	        android:background="#425121" />
-	</LinearLayout>
-	
 	<RelativeLayout
     	android:id="@+id/user_id"
     	android:layout_width="fill_parent"
@@ -134,5 +124,16 @@
 			android:layout_marginTop="10dip" />
     		     	     
 	</LinearLayout>
+	    
+	    <TextView
+	        android:id="@+id/brown_bg"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/footer"
+	        android:textColor="#ff0000"
+	        android:background="#425121"
+	        android:layout_alignParentBottom="true" />
 	
 </RelativeLayout>
+
+</ScrollView>

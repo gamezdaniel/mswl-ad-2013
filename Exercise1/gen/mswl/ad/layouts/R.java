@@ -28,16 +28,16 @@ public final class R {
     public static final class id {
         public static final int action_settings=0x7f08000b;
         public static final int blue_bg=0x7f080000;
-        public static final int brown_bg=0x7f080001;
-        public static final int buttons=0x7f080005;
-        public static final int icon=0x7f080003;
-        public static final int info=0x7f080007;
-        public static final int locate=0x7f08000a;
-        public static final int map=0x7f080009;
-        public static final int perfil=0x7f080006;
-        public static final int update=0x7f080008;
-        public static final int user_id=0x7f080002;
-        public static final int username=0x7f080004;
+        public static final int brown_bg=0x7f08000a;
+        public static final int buttons=0x7f080004;
+        public static final int icon=0x7f080002;
+        public static final int info=0x7f080006;
+        public static final int locate=0x7f080009;
+        public static final int map=0x7f080008;
+        public static final int perfil=0x7f080005;
+        public static final int update=0x7f080007;
+        public static final int user_id=0x7f080001;
+        public static final int username=0x7f080003;
     }
     public static final class layout {
         public static final int main_layouts=0x7f030000;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListsApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner">Unix-Like OS List</string>
+    <string name="item_1">1. Linux</string>
+    <string name="item_2">2. BSD</string>
+    <string name="item_3">3. Solaris</string>
+
+</resources>

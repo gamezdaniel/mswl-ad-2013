@@ -85,7 +85,7 @@ public class AdvancedList extends ListActivity
  
 
         public static class MyAdapter extends BaseAdapter
-        {       
+        {
         	   private Context mContext;
         	   
                public MyAdapter (Context context)
@@ -142,8 +142,8 @@ public class AdvancedList extends ListActivity
 	               		tvTitle.setText(mArray.get(position).mTitle);
 	               		TextView tvDescription = (TextView) view.findViewById(R.id.description);
 	               		tvDescription.setText(mArray.get(position).mDescription);
-                		ImageView img = (ImageView) view.findViewById(R.id.image);	                    	img.setImageDrawable(
-                    			mContext.getResources().getDrawable(
+                		ImageView img = (ImageView) view.findViewById(R.id.image);	                    
+                		img.setImageDrawable(mContext.getResources().getDrawable(
                     					mArray.get(position).mImageResource));
                 	}
 

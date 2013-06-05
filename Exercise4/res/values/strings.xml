@@ -3,10 +3,30 @@
 
     <string name="app_name">Exercise4</string>
     <string name="action_settings">Settings</string>
-    <string name="banner">*-- List --*</string>
+    <string name="banner">Universidades @ Madrid</string>
     <string name="map_key">0Tp7WsIDiyqoDmSF9LMprvDzte-hj_A6r-qxbow</string>
-    <string name="item_1">1. Linux</string>
-    <string name="item_2">2. BSD</string>
-    <string name="item_3">3. Solaris</string>
+    
+    <string name="item_1">1. Alcalá</string>
+    <string name="desc_1">Universidad de Alcalá (UAH)</string>
+    <string name="lat1">40482536</string>
+    <string name="lon1">-3361151</string>
+    
+    <string name="item_2">2. Autónoma</string>
+    <string name="desc_2">Universidad de Autónoma (UAM)</string>
+    <string name="lat2">40545300</string>
+    <string name="lon2">-3696110</string>
+    
+    <string name="item_3">3. Complutense</string>
+    <string name="desc_3">Universidad Complutense (UCM)</string>
+    <string name="lat3">40449167</string>
+    <string name="lon3">-3728056</string>
+    
+    <string name="item_4">4. Rey Juan Carlos</string>
+    <string name="desc_4">Universidad Rey Juan Carlos (URJC)</string>
+    <string name="lat4">40337778</string>
+    <string name="lon4">-3875000</string>
+    
+    <string name="title_activity_complex_list">Universidades @ Madrid</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

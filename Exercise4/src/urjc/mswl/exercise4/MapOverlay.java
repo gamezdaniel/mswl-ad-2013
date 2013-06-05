@@ -41,6 +41,7 @@ public class MapOverlay extends Overlay
             final int intrinsicWidth = 50;
             final int intrinsicHeight = 50;
             mMarker.setBounds(0, 0, intrinsicWidth, intrinsicHeight);
+            mMarker.setBounds(0, 0, intrinsicWidth, intrinsicHeight);
 
             mMarkerXOffset = -(intrinsicWidth / 2);
             mMarkerYOffset = -(intrinsicHeight / 2);
